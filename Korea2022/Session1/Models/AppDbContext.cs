@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Session1.Models;
 
-public partial class MasterContext : DbContext
+public partial class AppDbContext : DbContext
 {
-    public MasterContext()
+    public AppDbContext()
     {
     }
 
-    public MasterContext(DbContextOptions<MasterContext> options)
+    public AppDbContext(DbContextOptions<AppDbContext> options)
         : base(options)
     {
     }
